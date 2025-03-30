@@ -1,6 +1,6 @@
 [configuration]
 entry_symbol = "luaAPI_library_init"
-compatibility_minimum = 4.2
+compatibility_minimum = 4.4
 
 [libraries]
 linux.x86_64.debug = "bin/libluaapi.linux.template_debug.x86_64.so"
@@ -25,3 +25,6 @@ ios.debug.arm64 = "bin/libluaapi.ios.template_debug.arm64.dylib"
 ios.release.arm64 = "bin/libluaapi.ios.template_release.arm64.dylib"
 ios.debug.simulator = "bin/libluaapi.ios.template_debug.universal.simulator.dylib"
 ios.release.simulator = "bin/libluaapi.ios.template_release.universal.simulator.dylib"
+
+web.debug.wasm32 = "res://bin/libluaapi.javascript.template_debug.wasm32.wasm"
+web.release.wasm32 = "res://bin/libluaapi.javascript.template_release.wasm32.wasm"
