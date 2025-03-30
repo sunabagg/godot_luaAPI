@@ -152,7 +152,7 @@ jobs:
           mkdir bin/templates
           mv macos.zip bin/templates/macos.zip
       
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.opts.final-artifact-name }}
           path: scripts/godot/bin/*

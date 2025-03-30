@@ -93,7 +93,7 @@ jobs:
           rm -rf scripts/godot/bin/{*,.web_zip}
           mv scripts/godot/templates scripts/godot/bin/
       
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: ${{matrix.opts.artifact-name}}
           path: scripts/godot/bin/*
