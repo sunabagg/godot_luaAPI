@@ -35,7 +35,7 @@ jobs:
           ./godot --headless --path project/ --editor --quit
           ./godot --headless --path project/
           mv project/log.txt project/extension-log.txt
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ always() }}
         with:
           name: gdextension-test-results
@@ -65,7 +65,7 @@ jobs:
           ./godot --headless --path project/ --editor --quit
           ./godot --headless --path project/
           mv project/log.txt project/extension-log.txt
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: ${{ always() }}
         with:
           name: gdextension-luajit-test-results

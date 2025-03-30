@@ -239,7 +239,7 @@ jobs:
         run: |
           cp -n README.md LICENSE scripts/godot/bin/
       
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{matrix.opts.artifact-name}}
           path: scripts/godot/bin/*

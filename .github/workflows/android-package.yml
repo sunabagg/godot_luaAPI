@@ -68,7 +68,7 @@ jobs:
           rm -rf bin/*
           mv templates bin/templates
       
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.opts.final-artifact-name }}
           path: scripts/godot/bin/*

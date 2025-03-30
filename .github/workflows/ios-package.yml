@@ -64,7 +64,7 @@ jobs:
           cd ..
           rm -rf ios_xcode
       
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.opts.final-artifact-name }}
           path: scripts/godot/bin/*
